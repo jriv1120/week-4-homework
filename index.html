@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Crystal Collector Game</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Css link -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+<!-- Jquery link -->
+<script src="http://code.jquery.com/jquery.js"</script>
+
+
+<!-- Java link -->
+<script type='text/javascript' src='game.js'></script>
+
+
+</head>
+
+<body onload="startGame()">
+
+
+	<!-- Bootstrap Container will hold everything -->
+<div class="container">
+
+	
+	<!-- Jumbotron holds the title section -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Crystal Collector!</h1>
+		</div>
+	</div>
+
+<!-- Rules Panel -->
+<div class="rowScores">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title"><strong>Rules</strong></h3>
+		</div>
+	
+		<div class="panel-body">
+			<p>You will be given a random number at the start if the game.</p>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score</p>
+			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you untill you click on it</p>
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		</div>
+	</div>
+
+<!-- Crystal Value Panel -->
+	<div class="row">
+		<div class="col-lg-3">
+			<div class="panel panel-default" id="crystalValue">
+					<div class="panel-heading">
+						<h4 class="panel-title"><strong>Crystal Value</strong></h4>
+					</div>
+
+					<div class="panel-body">
+						<large class="value"></large>
+					</div>
+			</div>
+		</div>
+
+<!-- Win/losses panel -->
+		<div class="col-md-2">
+			<div id="score" class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><span id"win">Wins:</span></h4>
+					</div>
+					
+					<div class="panel-heading">
+						<h4 class="panel-title"><span id="loss">Losses:</span></h4>
+					</div>
+			</div>
+		</div>
+
+<!-- Jewel Images -->
+		<div>
+
+			<img class="gems" id="blueJewel" src="blue.png">
+			<img class="gems" id="greenGem" src="green.png">
+			<img clss="gems" id="redRuby" src="red.png">
+			<img class="gems" id="yellowStone" src="yellow.png">
+
+		</div>
+	
+	</div>
+
+
+<!-- Crystal Value Panel -->
+	<div class="row">
+		<div class="col-lg-3">
+			<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title" id="yourPoints"><strong>Your Value</strong></h4>
+					</div>
+
+					<div class="panel-body">
+						<large class="value"></large>
+					</div>
+			</div>
+		</div>
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+<script type="text/javascript" src="test.js"></script>
+
+</html>
